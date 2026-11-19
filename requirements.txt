@@ -1,0 +1,4 @@
+pandas>=2.2
+numpy>=1.26
+# hanya untuk membuat ulang documentation/data-flow-diagram.png
+matplotlib>=3.8
