@@ -184,3 +184,10 @@ Susunan kolom: `transaction_date`, `make`, `make_freq` → fitur numerik hasil c
 6 kolom `_minmax` → `horsepower-binned_ordinal` → 26 kolom one-hot.
 
 Dataset mentah di `data/raw/` tetap utuh (MD5 `92b4a3cdf229197d356f4fc422ab3720`, diverifikasi otomatis setiap pipeline dijalankan).
+
+---
+
+## Author
+
+**Juwiharso Dermawan** ([@juwihars0508](https://github.com/juwihars0508))
+Individual Assignment — Data Engineering: Pipeline & Preparation · AI Engineering Bootcamp ReWork
