@@ -461,7 +461,8 @@ def save_data(df: pd.DataFrame, path: Path = PROCESSED_PATH) -> Path:
     """Menyimpan processed dataset ke folder data/processed/."""
     section("[LOAD] Menyimpan processed dataset")
     path.parent.mkdir(parents=True, exist_ok=True)
-    df.to_csv(path, index=False, date_format="%Y-%m-%d")
+    # lineterminator eksplisit agar file identik di Windows/macOS/Linux
+    df.to_csv(path, index=False, date_format="%Y-%m-%d", lineterminator="\n")
     print(f"Tersimpan : {path.relative_to(PROJECT_ROOT)}")
     print(f"Ukuran    : {df.shape[0]} baris x {df.shape[1]} kolom")
     return path
